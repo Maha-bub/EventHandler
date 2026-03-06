@@ -22,7 +22,7 @@ function makePink() {
   document.body.style.backgroundColor = "pink";
 }
 
-// option-4 another one(function declared inside the add even lisener )
+// option-4 another one(function declared inside the add even lisener)
 
 const makeGreen = document.getElementById("make-green");
 makeGreen.addEventListener("click", function makeGreen() {

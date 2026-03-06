@@ -8,3 +8,9 @@ const makeBlueButton = document.getElementById("makeBlue");
 makeBlueButton.onclick = function makeBlue() {
   document.body.style.backgroundColor = "blue";
 };
+
+// option-3 (version-2)
+const purpleButton = document.getElementById("MakePurple");
+purpleButton.onclick = function purpleButton() {
+  document.body.style.backgroundColor = "purple";
+};

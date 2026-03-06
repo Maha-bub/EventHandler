@@ -14,3 +14,10 @@ const purpleButton = document.getElementById("MakePurple");
 purpleButton.onclick = function purpleButton() {
   document.body.style.backgroundColor = "purple";
 };
+// option-4
+
+const pinkButton = document.getElementById("make-pink");
+pinkButton.addEventListener("click", makePink);
+function makePink() {
+  document.body.style.backgroundColor = "pink";
+}

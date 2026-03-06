@@ -1,28 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour of DOM</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="console.log(8)">Hello!</button>
     <button onclick="console.log(8)">World</button>
     <button onclick="console.log('I am clicked.')">Clicked Me</button>
-    <br>
-    <br>
+    <br />
+    <br />
     <!-- option one -->
-    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
-   <!-- option two -->
+    <button onclick="document.body.style.backgroundColor = 'yellow'">
+      Make Yellow
+    </button>
+    <!-- option two -->
     <button onclick="makeRed()">Make red</button>
-    <br>
+    <br />
     <button id="makeBlue">MakeBlue</button>
+    <button id="MakePurple">Purple</button>
     <script>
-       
+      const purpleButton = document.getElementById("MakePurple");
+      purpleButton.onclick = function purpleButton() {
+        document.body.style.backgroundColor = "purple";
+      };
     </script>
 
-
     <script src="script.js"></script>
-      
-</body>
+  </body>
 </html>
